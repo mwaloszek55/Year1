@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <form action="" method="POST" novalidate>
+        
+        {{ form.hidden_tag() }}
+        {{ form.colour.label }}
+        {{ form.colour() }}
+        <br />
+        {{ form.submit() }}
+    {{ answer }}
+
+
+</form>
+
+<p>
+    Go to the <a href="{{ url_for('topping') }}">pizza</a> game
+</p>
+
+
+
+
+{% endblock %}

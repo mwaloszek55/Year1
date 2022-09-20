@@ -1,0 +1,33 @@
+body {
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "top top"
+                         "middle-left middle-right"
+                         "bottom bottom"
+}
+
+header {
+grid-area: top;
+background-color: #2E1114;
+padding: 5em;
+}
+
+nav {
+grid-area: middle-left;
+background-color: black;
+}
+
+main {
+grid-area: middle-right;
+padding: 19.3em;
+background-color: burlywood;
+}
+
+footer {
+    grid-area: bottom;
+    background-color: chocolate;
+    padding: 5em;
+}

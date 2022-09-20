@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+        {% block head_content %}
+        {% endblock %}
+    </head>
+
+
+
+    <body>
+
+        <header>
+            <div class="logo">
+                <h1>
+                Bloodelf Escapade
+                </h1>
+            </div>
+            <nav class="nav">
+                <a class="active" href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('leaderboard') }}">Leaderboard</a>
+                {% if not g.user %}
+                    <a href="{{ url_for('login') }}">Sign in</a>
+                    <a href="{{ url_for('register') }}">Register</a>
+                {% else %}
+                    <a href="{{ url_for('game') }}">Game</a>
+                    <a href="{{ url_for('logout') }}">Logout</a>
+                {% endif %}
+            </nav>
+        </header>
+
+
+        <main>
+            {% block main_content %}
+        
+            {% endblock %}
+        </main>
+
+        
+        <footer>
+            &copy; Web Dev 2
+        </footer>
+
+    </body>
+</html>

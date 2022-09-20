@@ -1,0 +1,3 @@
+Mary	Murphy	6500
+Jim	McFarland	3000
+Patricia	Lynch	7000

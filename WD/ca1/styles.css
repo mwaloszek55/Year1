@@ -1,0 +1,328 @@
+@viewport {
+    width: device-width;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+
+body {
+    margin: 0;
+    background-image:url(header2.png);
+    font-family: 'Playfair Display', serif;;
+}
+
+#tiers img{
+    width: 20em;
+    width: 90%;
+    margin-left: -2.5em;
+    margin: auto;
+}
+
+#Early img{
+    width: 20em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#Early h3{
+    text-align: center;
+}
+
+#Early p{
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+#Europe img{
+    width: 20em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+#Europe h3{
+    text-align: center;
+}
+#Europe p{
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+#mainpage section{
+    margin-bottom: 5em;
+}
+
+#Evolution img{
+    width: 20em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#Evolution p{
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+#Evolution h3{
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+#nsfw img{
+    width: 20em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#cheesypickuplines p{
+    text-align: center;
+}
+
+#cheeserollin1 img {
+    width: 20em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 1em;
+}
+
+#cheeserollingpage section {
+    text-align: center;
+}
+
+#Tierlist {
+    border-bottom: 1px solid black;
+}
+
+#tiers {
+    text-align: center;
+}
+
+#tiers ol{
+    padding: 0em;
+}
+
+#pickupLinesText p{
+    padding: 1em;
+}
+
+
+#me {
+    text-align: center;
+    margin-top: -1em;
+    padding-bottom: 1em;
+}
+
+h2 + p{
+    text-align: center;
+}
+
+
+
+        
+@media screen and (min-width: 600px) {
+        
+    body {
+        margin: 0 auto;
+        text-align: left;
+        font-family: 'Playfair Display', serif;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: "top top"
+                             "middle-left middle-right"
+                             "bottom bottom"
+    }
+    #tiers img{
+        width: 25em;
+        padding-bottom: 3em;
+        padding-top: 1em;
+        border-bottom: 1px solid black;
+        margin-left: -2.5em;
+    }
+    #tiers p{
+        padding-right:5em;
+    }
+    #Early img{
+        width: 13em;
+        float: left;
+        padding-right: 2em;
+    }
+    
+    #Europe img{
+        width: 13em;
+        float: right;
+        padding-left: 2em;
+        padding-top: 1.5em
+    
+    }
+    
+    #Early p{
+        padding-top: 0.5em;
+    }
+    
+    #mainpage section{
+        margin-bottom: 5em;
+    }
+    
+    #Evolution img{
+        width: 13em;
+        float: left;
+        padding-right: 1.5em;
+    }
+    
+    #Evolution p{
+        padding-top: 0.5em;
+    }
+    
+    #Evolution h3{
+        padding-top: 0.5em;
+    }
+    #cheesypickuplines p {
+        text-align: left;
+    }
+    #nsfw img{
+        width: 12em;
+        float: right;
+    }
+    #cheeserollin1 img {
+        width: 17em;
+        float: left;
+        padding-right: 1.5em;
+        margin-top: -0.21em;
+    }
+    
+    #cheeserollin1 h3 {
+        padding-left: 2em;
+    }
+
+    #cheeserollingpage section {
+        text-align: left;
+    }
+
+    #Tierlist {
+        border-bottom: 1px solid black;
+        display: inline;
+    }
+    #me p{
+        text-align: center;
+    }
+    h2 + p{
+        text-align: center;
+        margin-top: -1em;
+    }
+    #tiers {
+        text-align: left;
+    }
+    #tiers figure {
+        width: 25em;
+    }
+}
+    
+header {
+    grid-area: top;
+    text-align: center;
+    padding: 1em;
+    background-color: #2E1114;
+    color:  #fdffb6;
+    opacity: 1;
+    background-image:url(header2.png);
+    border-bottom: 1px solid #fdffb6;
+}
+
+h1 {
+    font-size: 4em;
+    font-style: italic;
+}
+    
+nav {
+    grid-area: middle-left;
+    text-align: center;
+    border-right: 1px solid #fdffb6;
+    border-left: 1px solid #fdffb6;
+}
+
+
+    
+main {
+    grid-area: middle-right;
+    padding: 3em;
+    background-color: burlywood;
+}
+    
+footer {
+    grid-area: bottom;
+    text-align: center;
+    background-color:   #482202  ;
+    padding: 0.9em;
+    border-top: 1px solid #fdffb6;
+    color: #fdffb6;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+li a {
+    display: block;
+    color: #fdffb6;
+    height: auto;
+    padding: 3em;
+    margin: 3.5em 0em;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    opacity: 0.8;
+  }
+
+li a:hover {
+    opacity: 1;
+    color: white;
+  }
+
+.active {
+    background-image: url(panel.png);
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+#PickupLines h3 + p {
+    text-align: center;
+    margin-top: -1em;
+    padding-bottom: 1em;
+}
+#PickupLines h3{
+    text-align: center;
+}
+
+
+
+
+footer a {
+    text-decoration: none;
+    color: #fdffb6;
+    }
+
+
+footer a:hover {
+    color: white;
+}
+
+
+
+
+#tiers h3{
+    padding-top: 2em;
+}
+

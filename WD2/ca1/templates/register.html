@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+
+{% block main_content %}
+
+<section class="login">
+    <h1 id="loginh1">
+        <b>Register</b>
+    </h1>
+    <form class="login_form" action="" method="POST" novalidate>
+        {{ form.hidden_tag() }}
+        <div id="user">
+            {{ form.user_id(placeholder="User ID") }}
+        </div>
+        <div id="center">
+            {% for error in form.user_id.errors %}
+            {{error}}
+            {% endfor %}
+        </div>
+        <div id="password">
+            {{ form.password(placeholder=("Password")) }}
+        </div>
+        <div id="center">
+            {% for error in form.password.errors %}
+            {{error}}
+            {% endfor %}
+        </div>
+        <div id="password2">
+            {{ form.password2(placeholder=("Confirm Password")) }}
+
+        </div>
+        <div id="center">
+            {% for error in form.password.errors %}
+            {{error}}
+            {% endfor %}
+        </div>
+        <div id="submit">
+            {{ form.submit()}}
+        </div>
+    </form>
+</section>
+
+
+
+{% endblock %}

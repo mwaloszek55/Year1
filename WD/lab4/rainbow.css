@@ -1,0 +1,63 @@
+h1 {
+    background-color: black;
+    color: white;
+}
+
+body {
+    background-color: peachpuff;
+}
+
+p {
+    color: blue;
+}
+
+b {
+    color: red;
+}
+
+em {
+    color: red;
+}
+
+#bow li {
+    background-color: fuchsia;
+    color: blue;
+    
+}
+
+#bow li > i {
+    background-color: fuchsia;
+}
+
+#bow li > b {
+    background-color: fuchsia;
+    color: blue;
+}
+
+#reading li {
+    background-color: peachpuff;
+    color: blue;
+}
+
+#reading li > b{
+    background-color: lightgray;
+    color: red;
+}
+
+#reading li > i{
+    background-color: peachpuff;
+}
+
+#reading h1 {
+    background-color: peachpuff;
+    color: blue;
+}
+
+.question {
+    background-color: black;
+    color: white;
+}
+
+#reading li + li {
+    color: fuchsia;
+}

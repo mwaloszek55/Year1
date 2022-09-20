@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block head_content %}
+<style>
+    #html1 {
+        background: url('/~mw17/cgi-bin/ca1/run.py/static/bmxbig.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+</style>
+    <!-- the background image is taken from https://www.shutterstock.com/ -->
+
+{% endblock %}
+
+
+{% block main_content %}
+
+<section>
+    <div>
+        <h1 id="zone">
+            Enter the Bike Zone
+        </h1> 
+    </div>
+    <div>
+        <h1 id="sign-in">
+            <a href="{{ url_for('register') }}">Register now!</a>
+        </h1> 
+    </div>
+</section>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+<section id="cart">
+    <h1 id="h1cart">Bikes</h1>
+    <table id="tableshop">
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+        {% for bike in bikes %}
+        <tr>
+            <td>{{bike["name"]}}</td>
+            <td>{{bike["price"]}}</td>
+            <td>{{bike["descr"]}}</td>
+            <td><img src="{{bike['img']}}" alt="" height="100" width="100" />
+            <td><a href="{{  url_for('bike', bike_id=bike['bike_id'])  }}" }}>See Details</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</section>
+
+{% endblock %}

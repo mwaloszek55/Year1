@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+    <p>
+        Try these numbers! G'luck
+    </p>
+    <table>
+        <tr>
+            <th colspan=6>
+                Lotto Numbers
+            </th>
+        </tr>
+        {% for _ in range(num_lines) %}
+            <tr>
+                {% for n in line %}
+                    <td>{{ n }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

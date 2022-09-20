@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+
+    <h1>Our Wine Catalog</h1>
+    <table>
+        {% for wine in wines %}
+            <tr>
+                <td>{{wine["name"]}}</td>
+                <td>{{wine["price"]}}</td>
+                <td><a href="{{  url_for('wine', wine_id=wine['wine_id'])  }}"   }}>See Details</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<section id="bike">
+
+    <h1 class="h1cart">
+        {{bike["name"]}}
+    </h1>
+    <div id="bike-div">
+        <p>
+            Price: {{ bike["price"]}}
+        </p>
+        <p>
+            {{ bike["description"]}}
+        </p>
+        <p>
+            {{bike["descr"]}}
+        </p>
+    </div>
+    <img src="{{bike['img']}}" alt="" height="100" width="100" />
+    <div id="bike-link">
+    <div id=bike-link1>
+        <p>
+            <a href="{{  url_for('add_to_cart', bike_id=bike['bike_id'])  }}">Add to cart</a>
+        </p>
+    </div>
+    <div id=bike-link2>
+        <p>
+            <a href="{{  url_for('remove_from_cart', bike_id=bike['bike_id'])  }}">Remove from cart</a>
+        </p>
+    </div>
+</div>
+</section>
+{% endblock %}

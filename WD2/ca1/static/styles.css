@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+   }
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+header {
+    display: flex;
+    background-color: white;
+    position: sticky;
+    vertical-align: middle;
+    border-bottom: black;
+    border-width: 1px;
+    border-bottom-style: solid;
+}
+
+
+
+.logo {
+    text-align: left;
+    flex: 1;
+    padding: 2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+    color: black;
+    padding: 1.2em;
+
+}
+
+
+.active {
+    font-weight:1000;
+}
+
+nav a:hover {
+    background-color: #ebe8e8;
+}
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.7em;
+}
+
+.login {
+    margin-top: 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_form {
+    margin-top: 2em;
+}
+
+input[type=text] {
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+
+#user {
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#password {
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#password2 {
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#submit {
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+#loginh1 {
+    border-bottom: black;
+    border-width: 1px;
+    border-bottom-style: solid;
+}
+
+
+#zone {
+    font-size: 60px;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+
+#sign-in {
+    padding-top: 1em;
+}
+
+#sign-in a{
+    color: black;
+    margin-left: 5em;
+    font-size: 45px;
+
+}
+
+#cart {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cart h1{
+    margin-bottom: 2em;
+}
+
+#cart a {
+    color: black;
+    text-decoration: none;
+}
+
+#cart a:hover {
+    background-color: #ebe8e8;
+    text-decoration: none;
+}
+
+#bike {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bike-div {
+    padding: 3em;
+    text-align: center;
+}
+
+
+
+
+#bike-link1 a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    width: 15em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+#bike-link2 a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    width: 15em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#bike-link1 a:hover {
+    background-color: #ebe8e8;
+    text-decoration: none;
+}
+
+#bike-link2 a:hover {
+    background-color: #ebe8e8;
+    text-decoration: none;
+}
+
+#h1cart {
+    font-size: 30px;
+    border-bottom: black;
+    border-width: 1px;
+    border-bottom-style: solid;
+
+}
+
+
+td {
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#shop {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#center {
+    text-align: center;
+}
+
+#tableshop {
+    padding: 4em;
+}

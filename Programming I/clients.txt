@@ -1,0 +1,6 @@
+John Smith, M, 27, F, 24, 29, movies, tennis, walking, computers
+Alison Jones, F, 25, M, 26, 32, walking, golf, movies, reading
+Brian Adams, M, 30, F, 23, 28, golf, cricket
+Chris Jones, M, 27, F, 30, 40, golf, reading
+Paul Fulton, M, 23, M, 21, 25, football, reading
+Peter Jackson, M, 25, M, 20, 30, golf, walking, movies

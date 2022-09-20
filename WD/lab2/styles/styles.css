@@ -1,0 +1,15 @@
+html {
+    background-image: url("background.jpg");
+}
+
+body {
+    background-color: white;
+    width: 80%;
+    margin: 1em auto;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+img {
+    max-width: 100%;
+}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+{% if cart %}
+<section id="cart">
+    <h1 id="h1cart">
+        <b>YOUR CART</b>
+    </h1>
+    <table>
+        {% for bike_id in cart %}
+        <tr>
+            <td>{{ names[bike_id] }}</td>
+            <td>{{ cart[bike_id] }}</td>
+            <td><a href="{{  url_for('remove_from_cart', bike_id=bike_id)  }}">Remove from cart</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</section>
+{% else %}
+<section id="cart">
+<p id="h1cart">Your cart is empty!</p>
+</section>
+{% endif %}
+
+
+
+
+
+
+
+
+{% endblock %}

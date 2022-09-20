@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+        <h1 id="leaderboard">Leaderboard</h1>
+        <section id="leaderboard">
+            <table id="leaderboardTable">
+                <th>Player</th>
+                <th>Score</th>
+                {% for score in scores %}
+                <tr>
+                    <td>{{score["user_id"]}}</td>
+                    <td>{{score["score"]}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </section>
+{% endblock %}

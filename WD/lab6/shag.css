@@ -1,0 +1,224 @@
+:root {
+    background-image: url(images/image01.jpg);
+    background-color: fuchsia;
+    font-family: 'Nerko One', cursive;
+  }
+
+
+body {
+    background-color: white;
+    border-style: solid;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    border-radius: 3rem;
+    background-color: #fcd9ff;
+    
+}
+
+
+
+header {
+    background-image: url(images/image03.png), url(images/image02.png);
+    background-position: left, right;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-style: solid;
+    text-align: center;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    padding: 2.5em;
+    background-color: #fcd9ff;
+}
+
+
+main > div {
+    text-align: left;
+    border-style: solid;
+    border-radius: 1em;
+}
+
+.header {
+    margin-left: 45em;
+    padding: 4em;
+}
+
+main {
+    padding: 2em;
+    margin: 5em;
+    background-image: url(images/image04.jpg);
+    background-repeat: no-repeat;
+    background-position: 2em 2em;
+    background-size: 34em;
+    background-color: #fcd9ff;
+}
+
+main > section{
+    padding: 2em;
+    border-radius: 3em;
+    border-style: solid;
+    margin: 8em;
+    text-align: center;
+}
+
+img {
+    height: auto;
+    width: 50%;
+    padding: 1em;
+    border-radius: 15%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: hotpink;
+    color: white;
+    text-align: center;
+    height: auto;
+    padding: 0em;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+
+    <form action="" method="POST" novalidate>
+        {{ form.hidden_tag() }}
+        {{ form.vote.label }}
+        {% for radio in form.vote %}
+            {{ radio.label }} {{ radio }}
+        {% endfor %}
+        <br />
+        {{form.submit()}}
+    </form>
+
+
+
+
+
+
+
+{% endblock %}

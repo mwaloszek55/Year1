@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html id="html1" lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Bike Zone</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+        {% block head_content %}
+        {% endblock %}
+    </head>
+
+
+
+    <body>
+
+        <header>
+            <div class="logo">
+                <h1>
+                Bike Zone
+                </h1>
+            </div>
+            <nav class="nav">
+                <a class="active" href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('shop') }}">Shop</a>
+                <a href="{{ url_for('cart') }}">Cart</a>
+                {% if not g.user %}
+                    <a href="{{ url_for('login') }}">Sign in</a>
+                {% else %}
+                    <a href="{{ url_for('logout') }}">Logout</a>
+                {% endif %}
+            </nav>
+        </header>
+
+
+        <main>
+            {% block main_content %}
+        
+            {% endblock %}
+        </main>
+
+        
+        <footer>
+            &copy; Web Dev 2
+        </footer>
+
+    </body>
+</html>

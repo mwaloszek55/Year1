@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+
+    <img src="{{ url_for('static', filename='wombat.jpg') }}" alt="A Wombat" />
+
+
+
+    <form action="" method="POST" novalidate>
+        
+        {{ form.hidden_tag() }}
+        {{ form.wombat.label }}
+        {{ form.wombat() }}
+        <br />
+        {{ form.submit() }}
+    {{ answer }}
+
+
+</form>
+
+
+
+
+
+
+{% endblock %}

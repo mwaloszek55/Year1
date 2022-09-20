@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block head_content %}
+    <script src="{{ url_for('static', filename='game.js') }}" type="module"></script>
+{% endblock %}
+
+
+{% block main_content %}
+    <section id="info">
+        <p id="bullets">
+        </p>
+        <p id="hp">
+        <p id="score">
+        
+        </p>
+
+    </section>
+    <section id="game">
+        <div id="wrapper">
+            <p id="outcome">
+
+            </p>
+        </div>
+        <canvas width="1024" height="640">
+
+        </canvas>
+    </section>
+{% endblock %}

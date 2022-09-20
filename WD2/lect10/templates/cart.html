@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <h1>
+        Your cart
+    </h1>
+    {% if cart %}
+        <table>
+            {% for wine_id in cart %}
+                <tr>
+                    <td>{{ names[wine_id] }}</td>
+                    <td>{{ cart[wine_id] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>Your cart is empty!</p>
+    {% endif %}
+
+
+
+
+
+
+
+
+{% endblock %}
